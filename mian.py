@@ -34,8 +34,11 @@ def add_number(number):
 def do_undo():
     global resultString
     screnn_value = resultString.get()
-    if int(screnn_value) >= 10:
-        resultString.set(screnn_value[0:-1])
+    try:
+        if int(screnn_value) >= 10:
+            resultString.set(screnn_value[0:-1])
+    except:
+        return
     
     
 """actions end""" 
