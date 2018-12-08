@@ -37,9 +37,10 @@ def do_undo():
     try:
         if int(screnn_value) >= 10:
             resultString.set(screnn_value[0:-1])
+        else:
+            resultString.set(0)
     except:
         return
-    
     
 """actions end""" 
 
